@@ -98,6 +98,11 @@ body {
   min-height: 100dvh;
   flex-direction: column;
 }
+.create_account .logo_absolute {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
 .create_account .sign_in_link {
   color: var(--button-dark-blue);
   text-decoration: underline;
@@ -119,6 +124,16 @@ body {
 }
 .create_account form .form-group {
   margin-bottom: 30px;
+}
+.create_account form .form-group .forgot_password {
+  text-align: right;
+  margin-top: 5px;
+}
+.create_account form .form-group .forgot_password a {
+  color: var(--button-dark-blue);
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 14px;
 }
 .create_account form .form-group label {
   display: block;
