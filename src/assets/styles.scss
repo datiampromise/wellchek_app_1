@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+// Initital setup
+:root {
+  --button-dark-blue: #007af5;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+
+input,
+span {
+  display: inline-block;
+}
+
+body {
+  padding: 8px;
+}
+
+.onboarding {
+  display: flex;
+  min-height: 100dvh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  .onboarding_title,
+  .onboarding_subtitle {
+    margin-bottom: 10px;
+    font-weight: normal;
+    &.large {
+      font-size: 32px;
+      max-width: 550px;
+      line-height: 1.5;
+    }
+  }
+
+  .onboarding_subtitle {
+    margin-bottom: 60px;
+  }
+  form {
+    .form-group {
+      margin-bottom: 10px;
+      label span {
+        border: 1px solid #888;
+        padding: 20px 30px;
+        display: block;
+        border-radius: 6px;
+        cursor: pointer;
+        user-select: none;
+      }
+      label + input {
+        display: none;
+      }
+    }
+    .action_buttons {
+      margin-top: 70px;
+      .continue,
+      .skip {
+        cursor: pointer;
+        width: 100%;
+        padding: 20px 30px;
+        display: block;
+        border-radius: 6px;
+        border: 1px solid #888;
+        margin-bottom: 10px;
+        background: transparent;
+      }
+      .continue {
+        background: var(--button-dark-blue);
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+    .context-title {
+      margin-top: 30px;
+    }
+    .context,
+    .context-title {
+      max-width: 400px;
+      margin-inline: auto;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.create_account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  flex-direction: column;
+  .sign_in_link {
+    color: var(--button-dark-blue);
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .title {
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-size: 32px;
+    text-align: center;
+    max-width: 550px;
+    line-height: 1.5;
+  }
+  form {
+    border: 1px solid #888;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    .form-group {
+      margin-bottom: 30px;
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+      input {
+        width: 100%;
+        padding: 20px 30px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 500;
+        width: min(600px, 400px);
+        border: 1px solid #888;
+        display: block;
+        outline: none;
+        &:hover {
+          border-color: var(--button-dark-blue);
+        }
+      }
+    }
+    .action_buttons {
+      input {
+        cursor: pointer;
+        width: 100%;
+        padding: 20px 30px;
+        display: block;
+        border-radius: 6px;
+        border: none;
+        margin-bottom: 10px;
+      }
+      input[type="submit"] {
+        background: var(--button-dark-blue);
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 10px;
+  }
+}
