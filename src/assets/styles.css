@@ -98,17 +98,30 @@ body {
   min-height: 100dvh;
   flex-direction: column;
 }
-.create_account .logo_absolute {
+.create_account .logo_position {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  padding: 40px;
   position: absolute;
-  top: 40px;
-  left: 30px;
+  top: 0;
+  left: 0;
 }
-.create_account .sign_in_link {
+.create_account .logo_position span {
+  height: 20px;
+  cursor: pointer;
+}
+.create_account .logo_position span:last-child {
+  margin-left: auto;
+}
+
+.sign_in_link {
   color: var(--button-dark-blue);
   text-decoration: underline;
   font-weight: bold;
 }
-.create_account .title {
+
+.title {
   margin-bottom: 15px;
   font-weight: normal;
   font-size: 32px;
@@ -116,31 +129,32 @@ body {
   max-width: 550px;
   line-height: 1.5;
 }
-.create_account form {
+
+form {
   border: 1px solid #888;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 40px;
 }
-.create_account form .form-group {
+form .form-group {
   margin-bottom: 30px;
 }
-.create_account form .form-group .forgot_password {
+form .form-group .forgot_password {
   text-align: right;
   margin-top: 5px;
 }
-.create_account form .form-group .forgot_password a {
+form .form-group .forgot_password a {
   color: var(--button-dark-blue);
   text-decoration: underline;
   font-weight: bold;
   font-size: 14px;
 }
-.create_account form .form-group label {
+form .form-group label {
   display: block;
   margin-bottom: 10px;
   font-weight: 500;
 }
-.create_account form .form-group input {
+form .form-group input {
   width: 100%;
   padding: 20px 30px;
   border-radius: 6px;
@@ -151,10 +165,10 @@ body {
   display: block;
   outline: none;
 }
-.create_account form .form-group input:hover {
+form .form-group input:hover {
   border-color: var(--button-dark-blue);
 }
-.create_account form .action_buttons input {
+form .action_buttons input {
   cursor: pointer;
   width: 100%;
   padding: 20px 30px;
@@ -163,7 +177,7 @@ body {
   border: none;
   margin-bottom: 10px;
 }
-.create_account form .action_buttons input[type=submit] {
+form .action_buttons input[type=submit] {
   background: var(--button-dark-blue);
   color: #fff;
   font-weight: 600;

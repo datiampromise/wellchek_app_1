@@ -1,12 +1,9 @@
 const AdminDashboard = () => {
-    return (
-        <div >
-            
-            <img src="images/logo.svg" />
-            
-
-        </div>
-    );
-}
+  return (
+    <div>
+      <img src="/images/WELLCHEK.svg" />
+    </div>
+  );
+};
 
 export default AdminDashboard;

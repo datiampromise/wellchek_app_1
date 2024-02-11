@@ -4,7 +4,16 @@ const SignUp = () => {
   return (
     <div className="create_account">
       <div className="logo_position">
-        <img src="/images/WELLCHEK.svg" alt="logo" className="logo_absolute" />
+        <Link to="/">
+          <img
+            src="/images/WELLCHEK.svg"
+            alt="logo"
+            className="logo_absolute"
+          />
+        </Link>
+        <span>
+          <img src="/images/cross.png" alt="logo" className="logo_absolute" />
+        </span>
       </div>
       <h1 className="title">Create a free account to save your prefrences</h1>
       <form>
