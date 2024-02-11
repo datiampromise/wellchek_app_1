@@ -98,6 +98,23 @@ body {
   min-height: 100dvh;
   flex-direction: column;
 }
+.create_account .reset_field img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  aspect-ratio: 1/1;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.create_account .reset_field .reset_message {
+  font-size: 12px;
+  color: var(--button-dark-blue);
+  font-weight: 500;
+  margin-bottom: 20px;
+  max-width: 300px;
+  text-align: center;
+}
 .create_account .logo_position {
   display: flex;
   align-items: center;
@@ -122,7 +139,7 @@ body {
 }
 
 .title {
-  margin-bottom: 15px;
+  margin-bottom: 45px;
   font-weight: normal;
   font-size: 32px;
   text-align: center;
@@ -178,6 +195,21 @@ form .action_buttons input {
   margin-bottom: 10px;
 }
 form .action_buttons input[type=submit] {
+  background: var(--button-dark-blue);
+  color: #fff;
+  font-weight: 600;
+}
+
+.action_buttons input {
+  cursor: pointer;
+  width: 400px;
+  padding: 20px 30px;
+  display: block;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 10px;
+}
+.action_buttons input[type=submit] {
   background: var(--button-dark-blue);
   color: #fff;
   font-weight: 600;

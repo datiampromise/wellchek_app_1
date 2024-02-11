@@ -97,6 +97,24 @@ body {
   justify-content: center;
   min-height: 100dvh;
   flex-direction: column;
+  .reset_field {
+    img {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      aspect-ratio: 1/1;
+      width: 100%;
+      object-fit: contain;
+    }
+    .reset_message {
+      font-size: 12px;
+      color: var(--button-dark-blue);
+      font-weight: 500;
+      margin-bottom: 20px;
+      max-width: 300px;
+      text-align: center;
+    }
+  }
   .logo_position {
     display: flex;
     align-items: center;
@@ -120,7 +138,7 @@ body {
   font-weight: bold;
 }
 .title {
-  margin-bottom: 15px;
+  margin-bottom: 45px;
   font-weight: normal;
   font-size: 32px;
   text-align: center;
@@ -179,6 +197,23 @@ form {
       color: #fff;
       font-weight: 600;
     }
+  }
+}
+
+.action_buttons {
+  input {
+    cursor: pointer;
+    width: min(400px, 600px);
+    padding: 20px 30px;
+    display: block;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 10px;
+  }
+  input[type="submit"] {
+    background: var(--button-dark-blue);
+    color: #fff;
+    font-weight: 600;
   }
 }
 

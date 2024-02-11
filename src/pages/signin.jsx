@@ -35,7 +35,7 @@ const Signin = () => {
               placeholder="Enter password"
             />
             <p className="forgot_password">
-              <Link to="#" className="forgot_password">
+              <Link to="/login/forgot" className="forgot_password">
                 Forgot password?
               </Link>
             </p>
